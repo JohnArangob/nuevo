@@ -2,24 +2,123 @@
 <html>
 <head>
     <title>Portafolio</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1 class="hola">Mi primer heading</h1>
     <h2 class="s">Mi segundo heading</h2>
     <p>parrafo.</p>
+
     <hr>
+
     <!-- esto es un comentario-->
     <h1 class="">mis paginas.</h1>
     <p class="">skadueueuueueu waka waka wkaa hue huee</p>
+
     <hr>
+
     <h1 class="">Sub rayar parte de oracion (este texto)</h1>
     <p class="">Esto va a ser una prueba, solo quiero sub rayar <span style="color: blue;">este texto</span>
     como para dar ejemplo.
     <br>
      <br>etiqueta br como un ejemplo</p>
+
     <hr>
+
     <a target="_blank" href="https://www.google.com/">ir a google</a>
+
     <hr>
-    <img src="./" alt="">
+
+    <h1 style="color: blue;">imagenes</h1>
+    <img src="./images/Screenshot 2023-02-11 9.30.34 PM.png" alt="" width="400">
+
+    <hr>
+
+    <br>
+    <br>
+    <br>
+
+    <form action="formulario" method="post">
+        <label for="Nombre">Nombre</label>
+        <input value="chanchito" type="text" id="Nombre" name="basesdatos" placeholder="Tu nombre completo" ><!-- type para cambiar forma-->
+        <br>
+        <label for="Numero">Numero Cedula</label>
+        <input value="feliz" type="text" id="Numero" name="databaseid" placeholder="Escribe tu cedula"> 
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="comentario" id="comentario" placeholder="ingrese comentario" cols="30" rows="10">valor por defecto</textarea>
+        <br>
+        <button type="button">Type boton</button>
+        <button type="reset">Type reset</button>
+        <button type="submit">Type submit </button>
+
+        
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <ul> <!--unite list-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    
+    <ol> <!--orde list-->
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;" >sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Pricce</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td>Hi bist</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>happy pig</td>
+                <td>$12,73</td>
+                </tr>
+            <tr>
+                <td>pig very happy</td>
+                <td>$34,3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 47.3</td>
+        </tfoot>
+    </table>
 </body>
 </html>
