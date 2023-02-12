@@ -1,0 +1,13 @@
+representacion html5 es la version con la cual estoy trabajando en mi pagina
+
+<head> parte oculta de la pagina y el encabezado de esta misma.
+
+    <title>encabezado de la pagina</title>
+
+</head>
+<body> parte visible de la paguna
+    <h1>titulo heading principal</h1>
+    <h2>titulo heading::segundario</h2>
+    <h6>hasta h6</h6>
+
+</body>
