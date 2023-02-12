@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portafolio</title>
+    <title>Portafolio</title><!--titulo-->
+    <!--estoy diciendo que en la etiqueta table, th y td tenga bordes de 1 px solid para que se pueda dar una pripiedad de negro o black-->
     <style>
         table, th, td {
             border: 1px solid black;
@@ -9,11 +10,11 @@
     </style>
 </head>
 <body>
-    <h1 class="hola">Mi primer heading</h1>
+    <h1 class="hola">Mi primer heading</h1><!--tipos de titulos del 1 al 6-->
     <h2 class="s">Mi segundo heading</h2>
-    <p>parrafo.</p>
+    <p>parrafo.</p><!--parrafos-->
 
-    <hr>
+    <hr><!--dividir horizontal rule-->
 
     <!-- esto es un comentario-->
     <h1 class="">mis paginas.</h1>
@@ -22,19 +23,20 @@
     <hr>
 
     <h1 class="">Sub rayar parte de oracion (este texto)</h1>
-    <p class="">Esto va a ser una prueba, solo quiero sub rayar <span style="color: blue;">este texto</span>
+    <p class="">Esto va a ser una prueba, solo quiero sub rayar <span style="color: blue;">este texto</span><!--estoy diciendo que "este texto" este coloriado de azul con style por medio de span-->
     como para dar ejemplo.
-    <br>
+    <br><!--break line o salto de linea-->
      <br>etiqueta br como un ejemplo</p>
 
     <hr>
 
-    <a target="_blank" href="https://www.google.com/">ir a google</a>
+    <a target="_blank" href="https://www.google.com/">ir a google</a><!-- anchor o ancla y se utiliza mas que todo para 
+    para crear enlaces y dirigirse-->
 
     <hr>
 
     <h1 style="color: blue;">imagenes</h1>
-    <img src="./images/Screenshot 2023-02-11 9.30.34 PM.png" alt="" width="400">
+    <img src="/images/vencejo.jpg" alt="" width="400">
 
     <hr>
 
@@ -42,9 +44,9 @@
     <br>
     <br>
 
-    <form action="formulario" method="post">
-        <label for="Nombre">Nombre</label>
-        <input value="chanchito" type="text" id="Nombre" name="basesdatos" placeholder="Tu nombre completo" ><!-- type para cambiar forma-->
+    <form action="formulario" method="post"><!--para formularios para que otros usuarios ingresen formularios y recopilar bases de datos con otros servicicos-->
+        <label for="Nombre">Nombre</label><!--cuadro de texto tipo formulario y esta dedicado con un for de nombre-->
+        <input value="chanchito" type="text" id="Nombre" name="basesdatos" placeholder="Tu nombre completo" ><!-- type para cambiar forma pues el imput es para citar y hacer cambios signficativos siempre y cuando se cite por me dio del id ya que uno tiene la parte de caracteres y el otro el cuadro-->
         <br>
         <label for="Numero">Numero Cedula</label>
         <input value="feliz" type="text" id="Numero" name="databaseid" placeholder="Escribe tu cedula"> 
@@ -53,10 +55,10 @@
         <br>
         <textarea name="comentario" id="comentario" placeholder="ingrese comentario" cols="30" rows="10">valor por defecto</textarea>
         <br>
-        <button type="button">Type boton</button>
-        <button type="reset">Type reset</button>
-        <button type="submit">Type submit </button>
-
+        <!--tipos de botones-->
+        <button type="button">Type boton</button><!--es un boton normal ya uno le da sus propiedades ya que es el mas aceptable para modificar con javascript y css-->
+        <button type="reset">Type reset</button><!--restablece valores que ya se le han determinado en value y en textarea para form-->
+        <button type="submit">Type submit </button><!--manda datos a method ya sea get o post-->
         
     </form>
 
@@ -64,8 +66,8 @@
     <hr>
     <br>
 
-    <ul> <!--unite list-->
-        <li>Elemento 1</li>
+    <ul> <!--unordered list o lista sin orden -->
+        <li>Elemento 1</li><!-- list item o elemento de lista-->
         <li>Elemento 2</li>
         <li>Elemento 3</li>
         <li>Elemento 4</li>
@@ -76,13 +78,13 @@
     <hr>
     <br>
     
-    <ol> <!--orde list-->
-        <li value="20">Elemento 1</li>
+    <ol> <!--ordered list o lista ordenada ya que en este caso si tiene un orden pre definidio pero solo es del 1 hasta donde se tenga datos-->
+        <li value="20">Elemento 1</li><!-- le informo que los elementos de lista empiecen desde 20 con un valor ya dado -->
         <li>Elemento 2</li>
         <li>Elemento 3</li>
         <li>Elemento 4</li>
         <li>
-            <ol>
+            <ol><!-- sub elemento de ordered list para tener un sub elemento de listas ordenadas y ya en este caso metemos codigo style css para que cuente como numero romano o otro estilo-->
                 <li style="list-style-type: lower-roman;" >sub elemento 1</li>
                 <li style="list-style-type: lower-roman;">sub elemento 2</li>
                 <li style="list-style-type: lower-roman;">sub elemento 3</li>
@@ -94,16 +96,16 @@
     <hr>
     <br>
 
-    <table style="width: 500px;">
-        <thead>
-            <tr>
-                <th>Producto</th>
+    <table style="width: 500px;"><!-- creo una tabla ordenada con una cabeza de tabla y tiene una lista de tr o table row (fila de tabla)-->
+        <thead><!-- cabeza de tabla-->
+            <tr><!--table row o fila de tabla-->
+                <th>Producto</th><!-- encabezado de tabla-->
                 <th>Pricce</th>
             </tr>
         </thead>    
-        <tbody>
+        <tbody><!--table body o cuerpo de tabla-->
             <tr>
-                <td>Hi bist</td>
+                <td>Hi bist</td><!--table data o datos de tabla celda de datos-->
                 <td>Free</td>
             </tr>
             <tr>
@@ -115,7 +117,7 @@
                 <td>$34,3</td>
             </tr>
         </tbody>
-        <tfoot>
+        <tfoot><!--table footer o pie de tabla-->
             <td></td>
             <td>Total: 47.3</td>
         </tfoot>
